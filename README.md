@@ -4,10 +4,12 @@
 
 # DataSet: ModelNet40 and ShapeNet
 
-# HOW do We Construct the Graph?
+# How do we construct the graph?
 
-# Mothods: Models with Permutation Invariance
+# Mothods: models with permutation invariancy
 
-# Our results
+# Our results:
 
-## Helpful Links
+## Helpful Links:
+
+### Wanna replicate our results? Try following command:
