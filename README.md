@@ -13,6 +13,10 @@ Like we mentioned, we used k-nearest-neighbor and fix-radius to consturct our gr
 
 * fix-radius:
 
+    Fix-radius means that for each data point, we consider all other nodes that inside a sphere with a fix radius as this node's neighbors. In the left below image, the length of the red line is smaller than the r so we will consider this an edge in the grah, while the blue line is longer than the radius so we won't include this connection. This is a widely used method to construct graph on set of points. The advantage is that we can have different popularity for different nodes. For example, if a node is located right in the center of the shape, it will have lots of connection and in the graph, it will be represented as a popular node. However, if a node is in the corner, it will have less points near it and is the graph, it will have less neighbors. The disadvantage is that it takes 2-3x time to construct the graph
+
+* K-nearest-neighbor:
+
     
 ![Image of background](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/dataset.PNG)
 
