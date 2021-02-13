@@ -1,6 +1,4 @@
 ---
-layout: page
-title: Dataset
-permalink: /dataset/
+title: dataset
 ---
 
