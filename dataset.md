@@ -1,5 +1,6 @@
 ---
-title: "Dataset details and links"
+layout: post
+title: Dataset details and links
 permalink: /dataset/
 ---
 
