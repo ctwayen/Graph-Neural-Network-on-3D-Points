@@ -6,7 +6,15 @@
 In this project, we will mainly train our model on ModelNet40 dataset. Collected by Princeton, ModelNet40 contains 40 categories of 3d shapes such as airplanes, cars, guitars, etc. Eash sample may have 1k - 60k points and also the surface information. Since surface data is not needed in this project, we had a simple pre-processing procedure that extract points from all samples and store them in h5py files. The points data will be directly used as the input for our PointNet model. 
 
 Points data will also be used to constrauct graph. Each data samples (shapes) will be used to construct one corresponding graph using either k-nearest-neighbor or fix-raidus. 
+
+
 # How do we construct the graph?
+Like we mentioned, we used k-nearest-neighbor and fix-radius to consturct our graph from points.
+
+* fix-radius:
+
+    
+![Image of background](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/dataset.PNG)
 
 # Mothods: models with permutation invariancy
 
