@@ -1,6 +1,6 @@
 ---
 layout: post
-title: dataset
+title: "dataset"
 permalink: /dataset/
 ---
 # ModelNet40:
