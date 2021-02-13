@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dataset details and links
+title: "Dataset details and links"
 permalink: /dataset/
 ---
 
