@@ -42,7 +42,7 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 
 
 * Graph-Pooling PointNet
-    
+    WIP
 
     
 
