@@ -29,7 +29,9 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 * PointNet
 
     PointNet is an well known model for machine learning tasks on 3d points cloud data, and it will be used as an baseline model in our project. A significant part of the PointNet is the MLP (Multilayer Perceptron) layer, which learn the exact same weights and bias for all points. Since all points share the same weights and bias, the MLP layer is obviously invariant to permutations. Through connecting MLP with non-linear layers and pooling layers (obviously these two are permutation invariant), PointNet has a permutation invariant architecture. 
-    ![Image of permutation](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/PointNet.png) [source](https://openaccess.thecvf.com/content_cvpr_2018/papers/Ge_Hand_PointNet_3D_CVPR_2018_paper.pdf)
+    ![Image of permutation](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/PointNet.png) 
+    
+    [source](https://openaccess.thecvf.com/content_cvpr_2018/papers/Ge_Hand_PointNet_3D_CVPR_2018_paper.pdf)
 
 
 * Graph Neural Network
