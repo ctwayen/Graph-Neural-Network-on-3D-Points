@@ -24,7 +24,7 @@ Like we mentioned, we used k-nearest-neighbor and fix-radius to consturct our gr
 # Mothods: models with permutation invariancy
 
 Our model's input is points cloud, which is essentially a set. We all know that a set does not have orders, which means that no matter in what order we passed in our data into our model, as long as the points are the same, our model should have the exact same result. This is what we called the permutation invariant. In this project, we will implement three models: PointNet, Graph Neural Network, and Graph-Pooling-PointNet. All three models are permutation invariant.
-![Image of permutation](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/permutationn.jpg)
+![Image of permutation](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/permutationn.png)
 
 * PointNet
 
