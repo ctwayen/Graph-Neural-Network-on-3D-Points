@@ -29,21 +29,15 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 
 * PointNet
 
-    PointNet is an well known model for machine learning tasks on 3d points cloud data, and it will be used as an baseline model in our project. A significant part of the PointNet is the MLP (Multilayer Perceptron) layer, which learn the exact same weights and bias for all points. Since all points share the same weights and bias, the MLP layer is obviously invariant to permutations. Through connecting MLP with non-linear layers and pooling layers (obviously these two are permutation invariant), PointNet has a permutation invariant architecture. 
+    PointNet is an well known model for machine learning tasks on 3d points cloud data, and it will be used as an baseline model in our project. A significant part of the PointNet is the MLP (Multilayer Perceptron) layer, which learn the exact same weights and bias for all points. Since all points share the same weights and bias, the MLP layer is obviously invariant to permutations. Through connecting MLP with non-linear layers and pooling layers (obviously these two are permutation invariant), PointNet has a permutation invariant architecture. In this project, since we are using PointNet as a baseline model, we designed a simple and basic one. The overall structure is similar to the structure of our GCN model. 
     ![Image of PointNet](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/PointNet.jpg) 
     
 
 
 * Graph Neural Network
 
-    WIP
-
-
-* Graph-Pooling PointNet
-
-    WIP
-
-    
+    We used Graph convolutional layers to aggregate and extract features. Each convolutional layer is followed by a non-linear layer and a normalization layer. Between each block, we connected graph pooling layers to down-sample the size. The graph convolutional layer is obviously permutation-invariant since the computation is all based on graph, which is indeed a unordered data structure. What's more, compared with PointNet's MLP, grapah convolutional layer could aggregate node's features with its neighbors' features to better extract local features. 
+    ![Image of PointNet](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/GCN.jpg)     
 
 
 # Our results:
