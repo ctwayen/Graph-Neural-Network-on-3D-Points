@@ -41,8 +41,8 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 
 
     <p float="left">
-        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/graph.gif" width="350" height="350"/>
-        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/points.gif" width="350" height="350"/>
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/points.gif" width="380" height="380"/>
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/graph.gif" width="380" height="380"/>
     </p>
 
 # Our results:
