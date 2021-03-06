@@ -39,7 +39,10 @@ Our model's input is points cloud, which is essentially a set. We all know that 
     We used Graph convolutional layers to aggregate and extract features. Each convolutional layer is followed by a non-linear layer and a normalization layer. Between each block, we connected graph pooling layers to down-sample the size. The graph convolutional layer is obviously permutation-invariant since the computation is all based on graph, which is indeed a unordered data structure. What's more, compared with PointNet's MLP, grapah convolutional layer could aggregate node's features with its neighbors' features to better extract local features. 
     ![Image of PointNet](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/GCN.jpg)     
 
-    ![Pool Effect](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/graph.gif)![Pool Effect points](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/points.gif)
+
+    <img align="left" width="100" height="100" src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/graph.gif">
+
+    ![Pool Effect](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/graph.gif) ![Pool Effect points](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/points.gif)
 
 # Our results:
     WIP
