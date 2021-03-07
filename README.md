@@ -37,16 +37,22 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 * Graph Neural Network
 
     We used Graph convolutional layers to aggregate and extract features. Each convolutional layer is followed by a non-linear layer and a normalization layer. Between each block, we connected graph pooling layers to down-sample the size. The graph convolutional layer is obviously permutation-invariant since the computation is all based on graph, which is indeed a unordered data structure. What's more, compared with PointNet's MLP, grapah convolutional layer could aggregate node's features with its neighbors' features to better extract local features. 
-    ![Image of PointNet](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/GCN.jpg)     
+    ![Image of PointNet](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/GCN.jpg)
 
+# Our Result:
 
+* Accuracy
+
+    In general, PointNet has a higher max-accuracy on ModelNet40 dataset. After brute force search the hyper-parameters. The best accuracy we found using GCN on 10 categories classification is 57%±2.7%. The deviation is caused by the sampling difference happening in the graph construction process and as well as the model’s initiation values. The best accuracy we found for PointNet is 68%. 
+    <p float="left">
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/best_gcn.png" width="380" height="380"/>
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/best_pointnet.PNG" width="380" height="380"/>
+    </p>
+    
     <p float="left">
         <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/points.gif" width="380" height="380"/>
         <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/graph.gif" width="380" height="380"/>
     </p>
-
-# Our results:
-    WIP
 
 ## Helpful Links:
 
