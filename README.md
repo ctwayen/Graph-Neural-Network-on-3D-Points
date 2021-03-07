@@ -44,9 +44,22 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 * Accuracy
 
     In general, PointNet has a higher max-accuracy on ModelNet40 dataset. After brute force search the hyper-parameters. The best accuracy we found using GCN on 10 categories classification is 57%±2.7%. The deviation is caused by the sampling difference happening in the graph construction process and as well as the model’s initiation values. The best accuracy we found for PointNet is 68%. 
-    
+
     ![Image of acc](https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/accuracy.PNG)
-    
+
+* Confusion Matrix
+
+    <p float="left">
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_GCN.png" width="380" height="380"/>
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_pt.png" width="380" height="380"/>
+    </p>
+
+
+* Resistence to data transformation
+
+
+* Pooling Layer
+
     <p float="left">
         <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/points.gif" width="380" height="380"/>
         <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/graph.gif" width="380" height="380"/>
