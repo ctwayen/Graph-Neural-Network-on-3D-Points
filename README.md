@@ -79,6 +79,13 @@ Our model's input is points cloud, which is essentially a set. We all know that 
         <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/aug.PNG">
     </p>
 
+    We could see that PointNet has a much worse resistance than GCN. If the data is stretched or shrunk, the pointnet will no longer recognize it anymore. On the other hand, GCN model even did really badly on shrunk data, it did really well on translated data. The stretch procedure is done by multiplying the original data with 100, the shrink procedure is done by multiplying 1e-2, and the translate procedure is done though adding 0.1 to all points within a sample. Three transformations could be seen through the following graph.
+
+    <p align="center">
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/augmen.PNG">
+    </p>
+
+
 * Pooling Layer
 
     <p float="left">
