@@ -60,11 +60,16 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 
     From the matrix, we could see that:
 
-        * GCN tends to misclassify ‘toilet’ and ‘vase’ as ‘chair’, and misclassify ‘bookshelf’ as ‘bed’
+    * GCN tends to misclassify ‘toilet’ and ‘vase’ as ‘chair’, and misclassify ‘bookshelf’ as ‘bed’
 
-        * PointNet tends to misclassify both ‘monitor’ as ‘airplane’
+    * PointNet tends to misclassify ‘monitor’ as ‘airplane’
 
-        *
+    However, if we take a look at those misclassified categories. We could see that the misclassified categories of GCN are much more reasonable than PointNet’s. There are a lot of similarities between toilet, vase, and chair, as well as bookshelf and bed. However, monitors and airplanes do not share much similarities. The reason why PointNet tends to misclassify monitors as airplanes is that airplanes contain second most training samples while monitors contain third least training samples. The PointNet model is trained to be greedy with probability. This could be seen as an advantage of GCN. If trained on a balance and large dataset, we expect the GCN model to outperform the PointNet.
+
+    <p align="center">
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/GCNmiss.PNG" />
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/ptmiss.PNG" />
+    </p>
 
 * Resistence to data transformation
 
