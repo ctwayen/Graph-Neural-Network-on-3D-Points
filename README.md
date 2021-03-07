@@ -76,7 +76,7 @@ Our model's input is points cloud, which is essentially a set. We all know that 
     Our models are trained to predict the shapes. Despite the permutation-invariance we talked before, a good model should also be invariant to different data transformations such as enlarge, shrink, and translation. In our project, we tried three different data augmentations and used them to test GCN and PointNet’s resistance. The results is shown in the below table:
 
     <p align="center">
-        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/aug.PNG" width="600" height="600"/>
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/aug.PNG">
     </p>
 
 * Pooling Layer
