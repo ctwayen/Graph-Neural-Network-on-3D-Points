@@ -52,8 +52,8 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 * Confusion Matrix
 
     <p float="left">
-        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_GCN.png" width="380" height="380"/>
-        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_pt.png" width="380" height="380"/>
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_GCN.png" width="400" height="400"/>
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_pt.png" width="400" height="400"/>
     </p>
 
 
