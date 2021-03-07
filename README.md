@@ -50,10 +50,11 @@ Our model's input is points cloud, which is essentially a set. We all know that 
     </p>
 
 * Confusion Matrix
+    Besides accuracy, a major way to evaluate a classfication model is confusion matrix. Here are two plots for the confusion matrix of GCN and PointNet. 
 
-    <p float="left">
-        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_GCN.png" width="400" height="400"/>
-        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_pt.png" width="400" height="400"/>
+    <p align="center">
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_GCN.png" />
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/cf_pt.png" />
     </p>
 
 
