@@ -95,7 +95,7 @@ Our model's input is points cloud, which is essentially a set. We all know that 
     </p>
 
     The pooling effects on GCN looks great! Check the GIFs. 
-    
+
     <p float="left">
         <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/points.gif" width="380" height="380"/>
         <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/graph.gif" width="380" height="380"/>
@@ -103,4 +103,8 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 
 ## Helpful Links:
 
-### Wanna replicate our results? Try following command:
+* Project code: https://github.com/ctwayen/GNN-Points-Cloud
+
+* Project docker: https://hub.docker.com/repository/docker/ctwayen/project_docker
+
+* Contact: ctwayen@outlook.com
