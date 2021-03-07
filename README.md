@@ -88,6 +88,14 @@ Our model's input is points cloud, which is essentially a set. We all know that 
 
 * Pooling Layer
 
+    One of the major components in the GCN model is the graph pooling layer. It helps us to reduce the data dimension. Thus we decide to also train a Graph-Pooling-PointNet model. However, this model has the worst result. The best accuracy is about 24% on 10-categories dataset. The reason why graph pooling layers work in GCN but not in pointNet is that the GCN model used graph convolutional layers ahead of graph pooling layers. The graph convolutional layer will aggregate the information within a neighborhood/cluster. Thus when the SAG pooling layer pools out nodes that are considered as less significant nodes in the cluster, their information will maintain in their neighbors. In other words, connecting graph convolutional layers with graph pooling layers will not lose much information while at the same time, reduce the sample size. However, MLPs in pointnet do not aggregate information within a cluster. Thus, if we connect MLPs with graph pooling layers, we actually lose every nodes’ information we pool out. This also explains why the SAGpooling layer has a better result than the ASApooling layer in our project. The reason is that the graph convolutional layer and the SAGpooling layer make up for each other and have really good results. 
+                   
+    <p align="center">
+        <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/poolshow.jpg">
+    </p>
+
+    The pooling effects on GCN looks great! Check the GIFs. 
+    
     <p float="left">
         <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/points.gif" width="380" height="380"/>
         <img src="https://raw.githubusercontent.com/ctwayen/Graph-Neural-Network-on-3D-Points/main/images/graph.gif" width="380" height="380"/>
